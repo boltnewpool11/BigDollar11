@@ -85,10 +85,6 @@ export const exportToPDF = (winners: PrizeWinner[]) => {
     const ticketRange = ticketNumbers.length > 0 ? 
       `#${Math.min(...ticketNumbers).toString().padStart(4, '0')}-#${Math.max(...ticketNumbers).toString().padStart(4, '0')}` : 
       'N/A';
-    const ticketNumbers = winner.ticket_numbers ? JSON.parse(winner.ticket_numbers) : [];
-    const ticketRange = ticketNumbers.length > 0 ? 
-      `#${Math.min(...ticketNumbers).toString().padStart(4, '0')}-#${Math.max(...ticketNumbers).toString().padStart(4, '0')}` : 
-      'N/A';
     
     return [
       prizeCategory?.name || 'Unknown',

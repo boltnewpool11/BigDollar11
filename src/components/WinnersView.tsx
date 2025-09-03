@@ -335,11 +335,13 @@ export const WinnersView: React.FC = () => {
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="flex items-center">
-                    <div className="bg-yellow-400 text-black px-3 py-1 rounded-full font-bold text-sm shadow-lg">
-                      🎫 #{winner.drawn_ticket ? winner.drawn_ticket.toString().padStart(4, '0') : 'N/A'}
-                    </div>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
+                        <div className="bg-yellow-400 text-black px-3 py-1 rounded-full font-bold text-sm shadow-lg">
+                          🎫 #{winner.drawn_ticket ? winner.drawn_ticket.toString().padStart(4, '0') : 'N/A'}
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <div className="flex items-center">
                         <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg">
                           <span className="text-white font-medium text-sm">
                             {winner.name.split(' ').map(n => n[0]).join('')}
