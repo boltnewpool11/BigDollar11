@@ -71,6 +71,8 @@ export const RaffleView: React.FC = () => {
         total_tickets: guide.totalTickets,
         prize_category: selectedCategory.id,
         prize_name: selectedCategory.name,
+        drawn_ticket: tickets[index],
+        ticket_numbers: JSON.stringify(guide.ticketNumbers),
         won_at: new Date().toISOString()
       }));
 
